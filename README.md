@@ -20,6 +20,6 @@ Git deployment shell script for PHP projects.
 	* Push to commit to your server only when tested locally in order to prevent repetitive commit messages.
 
 * Suggested Git Flow <br />
-	*| Release(Tag)	| Master(branch)	| Develop(branch)	| Feature(Branch)  |
-	*| V1.0.0 		| <<--- () 			| <<---- () 		| ----> ()	F1.0   |
+	* | Release(Tag)	| Master(branch)	| Develop(branch)	| Feature(Branch)  |
+	* | V1.0.0 		| <<--- () 			| <<---- () 		| ----> ()	F1.0   |
 
