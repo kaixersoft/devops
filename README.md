@@ -29,7 +29,7 @@ Git deployment shell script for PHP projects.
 | Release(V1.1.2) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) | Bug fixing #2 <br /> 
 <br />
 To add new feature, branch out current Develop branch
-<br />
+<br /><br />
 | Release(V1.2.2) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) |  (branch)----> Feature (F2.0) | <br /> 
 | Release(V1.2.3) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) | Bug fixing #3 <br /> 
 
