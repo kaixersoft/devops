@@ -24,6 +24,16 @@ Git deployment shell script for PHP projects.
 |:-------------------|:------------------|:------------------|:-----------------|<br />
 
 | Release(V1.0.0) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) |  (branch)----> Feature (F1.0) | <br /> 
-| Release(V1.0.1) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) | Bug fixing  <br /> 
-| Release(V1.1.1) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) |  <<-- (merge Feature)----> (F1.0) | <br /> 
+| Release(V1.0.1) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) | Bug fixing #1 <br /> 
+| Release(V1.1.1) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) |  <<-- (merge Feature)(F1.0) | <br /> 
+| Release(V1.1.2) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) | Bug fixing #2 <br /> 
+<br />
+To add new feature, branch out current Develop branch
+<br />
+| Release(V1.2.2) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) |  (branch)----> Feature (F2.0) | <br /> 
+| Release(V1.2.3) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) | Bug fixing #3 <br /> 
 
+
+
+* Git Flow Versioning <br />
+V .  Release . Feature . Bugfix
