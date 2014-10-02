@@ -22,7 +22,8 @@ Git deployment shell script for PHP projects.
 * Suggested Git Flow <br />
 | Release(Tag)		 | Master(branch)	 | Develop(branch)	 | Feature(Branch)  |<br />
 |:-------------------|:------------------|:------------------|:-----------------|<br />
-| Release(V1.0.0) 	 | <<--- (master)	 | <<---- (develop)	 | ----> Feature Branch(F1.0)  <br /> 
-| Release(V1.0.0) 	 | <<--- (master)	 | <<---- (bubfix 1) |					
 
+| Release(V1.0.0) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) |  (branch)----> Feature (F1.0) | <br /> 
+| Release(V1.0.1) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) | Bug fixing  <br /> 
+| Release(V1.1.1) <<---(tag) |  <<--- (master)	 | <<---- (merge dev) |  <<-- (merge Feature)----> (F1.0) | <br /> 
 
