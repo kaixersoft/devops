@@ -1,4 +1,3 @@
-#!/bin/sh
 #Author : Xerxis Anthony B. Alvar ( kaixerosft@gmail.com )
 #Usage : ./thisfile.sh "project_folder"
 
@@ -7,8 +6,8 @@ if [ -z "$1" ]; then
         exit
 fi
 
-REPOFOLDER=/var/www/repo/
-WEBROOTFOLDER=/var/www/
+REPOFOLDER=/var/repo/
+WEBROOTFOLDER=/var/www/apps.flok.co/
 PROJECTNAME=$1
 REPOPATH=$REPOFOLDER$PROJECTNAME.git
 WEBPATH=$WEBROOTFOLDER$PROJECTNAME
@@ -21,15 +20,20 @@ fi
 mkdir $REPOPATH && cd $REPOPATH
 git init --bare
 
+chmod 775 -R $REPOPATH
+
 echo "#!/bin/sh
 git checkout -f" > $REPOPATH/hooks/post-receive
 chmod +x $REPOPATH/hooks/post-receive
 
 mkdir $WEBPATH
 
+chmod 775 -R $WEBPATH
+
 git config --bool core.bare false
 git config --path core.worktree $WEBPATH
 git config receive.denycurrentbranch ignore
+
 
 echo "Here's your project details:
 GIT URL : ssh://<ssh_user>@<server_ip>/$REPOPATH
@@ -39,3 +43,4 @@ git clone -o production ssh://<ssh_user>@<server_ip>$REPOPATH local_folder
 or if you have already a working folder
 git remote add production ssh://<ssh_user>@<server_ip>$REPOPATH
 "
+
