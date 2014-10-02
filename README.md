@@ -19,10 +19,10 @@ Git deployment shell script for PHP projects.
 	* Best to use LAMP/LEMP Vagrant setup local and sync your webroot to your host folder
 	* Push to commit to your server only when tested locally in order to prevent repetitive commit messages.
 
-* Suggested Git Flow 
-| Release(Tag)		| Master(branch)	 | Develop(branch)	 | Feature(Branch)  |<br />
+* Suggested Git Flow <br />
+| Release(Tag)		 | Master(branch)	 | Develop(branch)	 | Feature(Branch)  |<br />
 |:-------------------|:------------------|:------------------|:-----------------|<br />
-| Release(V1.0.0) 	 | <<--- (master)	 | <<---- (develop)	 | ----> Feature Branch(F1.0)   
-| Release(V1.0.0) 	 | <<--- (master)	 | <<---- (bubfix 1) |					|
+| Release(V1.0.0) 	 | <<--- (master)	 | <<---- (develop)	 | ----> Feature Branch(F1.0)  <br /> 
+| Release(V1.0.0) 	 | <<--- (master)	 | <<---- (bubfix 1) |					
 
 
